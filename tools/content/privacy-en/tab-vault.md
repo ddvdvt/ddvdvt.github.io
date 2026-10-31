@@ -33,4 +33,4 @@ The extension does not read the content of web pages and does not inject scripts
 
 ## Contact
 
-Questions — through the Issues of the project's repository.
+Privacy questions: erlan.asimkhanov02@gmail.com.

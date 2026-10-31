@@ -40,4 +40,4 @@ Remove the extension and Chrome will erase all of its data. A key can also be de
 
 ## Contact
 
-Questions can be asked in the issues of the project's repository.
+Privacy questions: erlan.asimkhanov02@gmail.com.

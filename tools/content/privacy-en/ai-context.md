@@ -33,4 +33,4 @@ After the first installation the extension opens a welcome page on the author's 
 
 ## Contact
 
-Questions about privacy — through the Issues section of the project's repository.
+Privacy questions: erlan.asimkhanov02@gmail.com.

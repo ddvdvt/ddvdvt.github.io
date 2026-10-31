@@ -28,4 +28,4 @@ After installation the extension opens a tab with a short guide on the author's 
 
 ## Contact
 
-Questions can be asked through the issues of the project's repository on GitHub.
+Privacy questions: erlan.asimkhanov02@gmail.com.

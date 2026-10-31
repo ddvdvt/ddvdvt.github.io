@@ -39,4 +39,4 @@ Clear the blocklist on the settings page or simply remove the extension — all 
 
 ## Contact
 
-Questions can be asked through the issues of the project's repository on GitHub.
+Privacy questions: erlan.asimkhanov02@gmail.com.

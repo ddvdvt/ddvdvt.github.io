@@ -48,4 +48,4 @@ In the future there may be a **voluntary** anonymous exchange of prices (only ma
 
 ## Contact
 
-Questions can be asked through the issues of the project's repository on GitHub.
+Privacy questions: erlan.asimkhanov02@gmail.com.
