@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en" data-title-ru="Политика конфиденциальности — Видео без мусора | ddvdvt" data-desc-ru="Политика конфиденциальности «Видео без мусора — без Shorts и рекомендаций»: что хранится, где и что никогда не отправляется.">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'; base-uri 'self'; form-action 'none'; object-src 'none'">
+<meta name="referrer" content="no-referrer">
+<title>Privacy policy — Video Declutter | ddvdvt extensions</title>
+<meta name="description" content="Privacy policy of Video Declutter — no Shorts, no recommendations: what is stored, where, and what is never sent.">
+<link rel="canonical" href="https://ddvdvt.github.io/privacy/youtube-clean.html">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<meta name="color-scheme" content="light dark">
+<meta property="og:site_name" content="ddvdvt extensions">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Privacy policy — Video Declutter | ddvdvt extensions">
+<meta property="og:description" content="Privacy policy of Video Declutter — no Shorts, no recommendations: what is stored, where, and what is never sent.">
+<meta property="og:url" content="https://ddvdvt.github.io/privacy/youtube-clean.html">
+<meta property="og:image" content="https://ddvdvt.github.io/img/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="/assets/site.css">
+<script src="/assets/boot.js"></script>
+</head>
+<body>
+<a class="skip" href="#main"><span class="en">Skip to content</span><span class="ru">К содержимому</span></a><header class="top">
+<div class="wrap top-in">
+<a class="brand" href="/" aria-label="ddvdvt extensions"><svg class="logo-mark" viewBox="0 0 32 32" width="28" height="28" aria-hidden="true"><rect x="1.5" y="1.5" width="29" height="29" rx="6" fill="none" stroke="currentColor" stroke-width="2"/><path d="M9 17.5l4.6 4.6L23.5 10" fill="none" stroke="var(--accent)" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="brand-name">ddvdvt<span class="brand-sub">/ <span class="en">extensions</span><span class="ru">расширения</span></span></span></a>
+<nav class="nav" aria-label="Main">
+<a href="/#extensions"><span class="en">Extensions</span><span class="ru">Расширения</span></a>
+<a href="/privacy/index.html" aria-current="page"><span class="en">Privacy</span><span class="ru">Приватность</span></a>
+<a href="/#projects"><span class="en">Projects</span><span class="ru">Проекты</span></a>
+</nav>
+<div class="lang" role="group" aria-label="Language / Язык">
+<button type="button" class="lang-btn" data-set-lang="en" aria-pressed="true">EN</button>
+<button type="button" class="lang-btn" data-set-lang="ru" aria-pressed="false">RU</button>
+</div>
+</div>
+</header>
+<main id="main" class="x-youtube-clean">
+<div class="wrap doc-wrap">
+<nav class="crumbs" aria-label="Breadcrumb"><a href="/privacy/index.html"><span class="en">Privacy policies</span><span class="ru">Политики конфиденциальности</span></a><span aria-hidden="true"> / </span><a href="/#youtube-clean"><span class="en">Video Declutter</span><span class="ru">Видео без мусора</span></a></nav>
+<div class="doc-title"><img class="ico" src="/img/icons/youtube-clean.png" width="128" height="128" alt="" decoding="async"><p class="eyebrow"><span class="en">Privacy policy</span><span class="ru">Политика конфиденциальности</span></p></div>
+<div class="en doc">
+<p class="lang-note">English translation. The Russian text is the original and is authoritative.</p>
+<h1>Privacy Policy — Video Declutter</h1>
+<p class="meta"><em>Date: 26.10.2026</em></p>
+<h2>What data is processed</h2>
+<ul><li><strong>YouTube pages</strong> (<code>www.youtube.com</code>). The extension reads their structure right in the browser in order to hide the parts you selected, redirect Shorts and turn off autoplay. What you watch and search for is not saved or transmitted anywhere.</li><li><strong>Settings:</strong> which items to hide, the mode, the focus schedule, the reminder, whether rule updates are enabled.</li><li><strong>Rule state:</strong> for each rule, when it last fired and how many times in a row it found no target. These are timestamps only, without page addresses.</li><li><strong>Today's time counter</strong> (a single number of seconds and a date). It is reset at midnight.</li><li><strong>Downloaded rules</strong>, if you have enabled rule updates.</li></ul>
+<h2>Where the data is stored</h2>
+<p>Only locally, in your browser's <code>chrome.storage.local</code>. Nothing is synchronised and nothing is transmitted to the author or to third parties.</p>
+<h2>Network requests</h2>
+<p>By default the extension makes no network requests at all.</p>
+<p>If you turn on &quot;Update rules from the author's site&quot;, the extension once a day (and on the &quot;Check now&quot; button) downloads a single file, <code>rules/youtube-clean/selectors.signed.json</code>, from the author's site:</p>
+<ul><li>the request is sent without cookies and contains none of your data, settings or history;</li><li>only a file with data (CSS selectors) is accepted, signed with the author's key and validated against a schema;</li><li>no code is loaded or executed from the network.</li></ul>
+<p>The extension does not block or modify YouTube's network requests.</p>
+<p>After installation the extension opens a tab with a short guide on the author's site once, and after removal the browser opens a &quot;why did you uninstall?&quot; page. These are ordinary static pages: the extension adds no data or identifiers to their addresses and transmits nothing to them.</p>
+<h2>What the extension does not do</h2>
+<ul><li>No analytics, telemetry, advertising or accounts.</li><li>No access to any sites other than <code>www.youtube.com</code>.</li><li>No remote code is executed.</li></ul>
+<h2>Deleting data</h2>
+<p>&quot;Reset settings&quot; on the settings page deletes the settings, the rule state and the downloaded rules. When the extension is removed, the browser deletes all of its data.</p>
+<h2>Contact</h2>
+<p>Questions can be asked through the issues of the project's repository on GitHub.</p>
+</div>
+<div class="ru doc">
+<p class="lang-note">Оригинал политики. Английский перевод доступен по кнопке EN.</p>
+<h1>Политика конфиденциальности «Видео без мусора»</h1>
+<p class="meta"><em>Дата: 26.10.2026</em></p>
+<h2>Какие данные обрабатываются</h2>
+<ul><li><strong>Страницы YouTube</strong> (<code>www.youtube.com</code>). Расширение читает их структуру прямо в браузере, чтобы скрыть выбранные части, перенаправить Shorts и выключить автовоспроизведение. Что вы смотрите и ищете, никуда не сохраняется и не передаётся.</li><li><strong>Настройки:</strong> какие пункты скрывать, режим, расписание фокуса, напоминание, включено ли обновление правил.</li><li><strong>Состояние правил:</strong> для каждого правила — когда оно последний раз сработало и сколько раз подряд не нашло цель. Это только отметки времени, без адресов страниц.</li><li><strong>Счётчик времени за сегодня</strong> (одно число секунд и дата). Сбрасывается в полночь.</li><li><strong>Скачанные правила</strong>, если вы включили их обновление.</li></ul>
+<h2>Где хранятся данные</h2>
+<p>Только локально, в <code>chrome.storage.local</code> вашего браузера. Ничего не синхронизируется и не передаётся ни автору, ни третьим лицам.</p>
+<h2>Сетевые запросы</h2>
+<p>По умолчанию расширение не делает никаких сетевых запросов.</p>
+<p>Если вы включите «Обновлять правила с сайта автора», расширение раз в сутки (и по кнопке «Проверить сейчас») скачивает один файл <code>rules/youtube-clean/selectors.signed.json</code> с сайта автора:</p>
+<ul><li>запрос идёт без cookies и не содержит ваших данных, настроек или истории;</li><li>принимается только файл с данными (селекторы CSS), подписанный ключом автора и проверенный по схеме;</li><li>код из сети не загружается и не выполняется.</li></ul>
+<p>Расширение не блокирует и не изменяет сетевые запросы YouTube.</p>
+<p>После установки расширение один раз открывает вкладку с короткой инструкцией на сайте автора, а после удаления браузер открывает страницу с вопросом «почему удалили?». Это обычные статические страницы: расширение не добавляет к их адресам никаких данных или идентификаторов и ничего им не передаёт.</p>
+<h2>Чего расширение не делает</h2>
+<ul><li>Нет аналитики, телеметрии, рекламы и учётных записей.</li><li>Нет доступа к сайтам, кроме <code>www.youtube.com</code>.</li><li>Не выполняется удалённый код.</li></ul>
+<h2>Удаление данных</h2>
+<p>«Сбросить настройки» на странице настроек удаляет настройки, состояние правил и скачанные правила. При удалении расширения браузер удаляет все его данные.</p>
+<h2>Контакты</h2>
+<p>Вопросы можно задать через issues репозитория проекта на GitHub.</p>
+</div>
+<p class="fine"><span class="en">This extension is not affiliated with or endorsed by YouTube or Google.</span><span class="ru">Расширение не связано с YouTube или Google и не одобрено ими.</span></p>
+<p class="doc-links"><a href="/#youtube-clean"><span class="en">Back to the extension</span><span class="ru">К расширению</span></a> · <a href="/privacy/index.html"><span class="en">All policies</span><span class="ru">Все политики</span></a></p>
+</div>
+</main>
+<footer class="foot">
+<div class="wrap foot-in">
+<div class="foot-brand">
+<a class="brand" href="/"><svg class="logo-mark" viewBox="0 0 32 32" width="28" height="28" aria-hidden="true"><rect x="1.5" y="1.5" width="29" height="29" rx="6" fill="none" stroke="currentColor" stroke-width="2"/><path d="M9 17.5l4.6 4.6L23.5 10" fill="none" stroke="var(--accent)" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="brand-name">ddvdvt<span class="brand-sub">/ <span class="en">extensions</span><span class="ru">расширения</span></span></span></a>
+<p class="muted"><span class="en">No cookies, no analytics, no external requests from this site.</span><span class="ru">На этом сайте нет cookies, аналитики и внешних запросов.</span></p>
+</div>
+<div class="foot-links">
+<h2 class="foot-h"><span class="en">Site</span><span class="ru">Сайт</span></h2>
+<ul class="foot-list">
+<li><a href="/#extensions"><span class="en">All extensions</span><span class="ru">Все расширения</span></a></li>
+<li><a href="/privacy/index.html"><span class="en">Privacy policies</span><span class="ru">Политики конфиденциальности</span></a></li>
+<li><a href="https://github.com/ddvdvt" rel="noopener">GitHub</a></li>
+</ul>
+</div>
+<div class="foot-projects"><h2 class="foot-h"><span class="en">Other projects by the author</span><span class="ru">Другие проекты автора</span></h2>
+<ul class="foot-list"><li><a href="https://formulacamp.com" rel="noopener">FormulaCamp</a> <span class="muted">— <span class="en">Learn Excel online with graded formulas — an Excel trainer.</span><span class="ru">Учите Excel онлайн на задачах с формулами по нарастающей сложности — тренажёр Excel.</span></span></li><li><a href="https://replaylab.pro" rel="noopener">CS2 Replay</a> <span class="muted">— <span class="en">Counter-Strike 2 demo analysis.</span><span class="ru">Разбор демо-записей Counter-Strike 2.</span></span></li></ul></div>
+</div>
+</footer>
+<script src="/assets/stores.js"></script>
+<script src="/assets/site.js"></script>
+</body>
+</html>

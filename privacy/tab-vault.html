@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en" data-title-ru="Политика конфиденциальности — Сейф вкладок | ddvdvt" data-desc-ru="Политика конфиденциальности «Сейф вкладок»: что хранится, где и что никогда не отправляется.">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'; base-uri 'self'; form-action 'none'; object-src 'none'">
+<meta name="referrer" content="no-referrer">
+<title>Privacy policy — Tab Vault | ddvdvt extensions</title>
+<meta name="description" content="Privacy policy of Tab Vault: what is stored, where, and what is never sent.">
+<link rel="canonical" href="https://ddvdvt.github.io/privacy/tab-vault.html">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<meta name="color-scheme" content="light dark">
+<meta property="og:site_name" content="ddvdvt extensions">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Privacy policy — Tab Vault | ddvdvt extensions">
+<meta property="og:description" content="Privacy policy of Tab Vault: what is stored, where, and what is never sent.">
+<meta property="og:url" content="https://ddvdvt.github.io/privacy/tab-vault.html">
+<meta property="og:image" content="https://ddvdvt.github.io/img/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="/assets/site.css">
+<script src="/assets/boot.js"></script>
+</head>
+<body>
+<a class="skip" href="#main"><span class="en">Skip to content</span><span class="ru">К содержимому</span></a><header class="top">
+<div class="wrap top-in">
+<a class="brand" href="/" aria-label="ddvdvt extensions"><svg class="logo-mark" viewBox="0 0 32 32" width="28" height="28" aria-hidden="true"><rect x="1.5" y="1.5" width="29" height="29" rx="6" fill="none" stroke="currentColor" stroke-width="2"/><path d="M9 17.5l4.6 4.6L23.5 10" fill="none" stroke="var(--accent)" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="brand-name">ddvdvt<span class="brand-sub">/ <span class="en">extensions</span><span class="ru">расширения</span></span></span></a>
+<nav class="nav" aria-label="Main">
+<a href="/#extensions"><span class="en">Extensions</span><span class="ru">Расширения</span></a>
+<a href="/privacy/index.html" aria-current="page"><span class="en">Privacy</span><span class="ru">Приватность</span></a>
+<a href="/#projects"><span class="en">Projects</span><span class="ru">Проекты</span></a>
+</nav>
+<div class="lang" role="group" aria-label="Language / Язык">
+<button type="button" class="lang-btn" data-set-lang="en" aria-pressed="true">EN</button>
+<button type="button" class="lang-btn" data-set-lang="ru" aria-pressed="false">RU</button>
+</div>
+</div>
+</header>
+<main id="main" class="x-tab-vault">
+<div class="wrap doc-wrap">
+<nav class="crumbs" aria-label="Breadcrumb"><a href="/privacy/index.html"><span class="en">Privacy policies</span><span class="ru">Политики конфиденциальности</span></a><span aria-hidden="true"> / </span><a href="/#tab-vault"><span class="en">Tab Vault</span><span class="ru">Сейф вкладок</span></a></nav>
+<div class="doc-title"><img class="ico" src="/img/icons/tab-vault.png" width="128" height="128" alt="" decoding="async"><p class="eyebrow"><span class="en">Privacy policy</span><span class="ru">Политика конфиденциальности</span></p></div>
+<div class="en doc">
+<p class="lang-note">English translation. The Russian text is the original and is authoritative.</p>
+<h1>Privacy Policy — Tab Vault</h1>
+<p class="meta"><em>Updated: 22 October 2026</em></p>
+<p><strong>In short: everything stays on your device. The extension sends nothing anywhere.</strong></p>
+<h2>What data is stored</h2>
+<ul><li>The addresses (URLs) and titles of the tabs you saved, group names, creation date, the &quot;pinned&quot; mark.</li><li>The operation log (which changes were made to the vault) and automatic vault snapshots — for recovery after failures.</li><li>Extension settings and service marks (time of the last copy, backup file names).</li></ul>
+<h2>Where it is stored</h2>
+<ul><li>In IndexedDB and <code>chrome.storage.local</code> of your browser profile.</li><li>In backup files in the <code>Downloads/TabVault/</code> folder on your disk (unless turned off in the settings).</li><li>On export — in the file that you save yourself.</li></ul>
+<h2>What is transmitted outside</h2>
+<p>Nothing. The extension has no server, analytics, advertising, accounts, synchronisation or remote code. Site icons are taken from the browser's local cache (<code>_favicon</code>), without network requests. The network is used only when <strong>you yourself</strong> open a saved tab.</p>
+<p>After installation the extension opens a tab with a short guide on the author's site once, and after removal the browser opens a &quot;why did you uninstall?&quot; page. These are ordinary static pages: the extension adds no data or identifiers to their addresses and transmits nothing to them.</p>
+<h2>Access to pages</h2>
+<p>The extension does not read the content of web pages and does not inject scripts into them. The <code>tabs</code> permission is used only to read a tab's address and title when saving, and to close, unload and open tabs.</p>
+<h2>Deleting data</h2>
+<ul><li>Delete groups on the vault page or replace the vault with an empty import.</li><li>Removing the extension erases the extension's IndexedDB and <code>chrome.storage</code>. Backup files in <code>Downloads/TabVault/</code> remain — delete the folder manually if you do not need them.</li></ul>
+<h2>Contact</h2>
+<p>Questions — through the Issues of the project's repository.</p>
+</div>
+<div class="ru doc">
+<p class="lang-note">Оригинал политики. Английский перевод доступен по кнопке EN.</p>
+<h1>Политика конфиденциальности — Сейф вкладок (Tab Vault)</h1>
+<p class="meta"><em>Обновлено: 22 октября 2026 г.</em></p>
+<p><strong>Коротко: всё остаётся на вашем устройстве. Расширение ничего никуда не отправляет.</strong></p>
+<h2>Какие данные хранятся</h2>
+<ul><li>Адреса (URL) и заголовки вкладок, которые вы сохранили, названия групп, дата создания, отметка «закреплена».</li><li>Журнал операций (какие изменения вносились в сейф) и автоматические снимки сейфа — для восстановления после сбоев.</li><li>Настройки расширения и служебные отметки (время последней копии, имена файлов бэкапа).</li></ul>
+<h2>Где хранятся</h2>
+<ul><li>В IndexedDB и <code>chrome.storage.local</code> вашего профиля браузера.</li><li>В файлах бэкапа в папке <code>Загрузки/TabVault/</code> на вашем диске (если не отключено в настройках).</li><li>При экспорте — в файле, который вы сами сохраняете.</li></ul>
+<h2>Что передаётся наружу</h2>
+<p>Ничего. У расширения нет сервера, аналитики, рекламы, аккаунтов, синхронизации и удалённого кода. Значки сайтов берутся из локального кэша браузера (<code>_favicon</code>), без сетевых запросов. Сеть используется только тогда, когда <strong>вы сами</strong> открываете сохранённую вкладку.</p>
+<p>После установки расширение один раз открывает вкладку с короткой инструкцией на сайте автора, а после удаления браузер открывает страницу с вопросом «почему удалили?». Это обычные статические страницы: расширение не добавляет к их адресам никаких данных или идентификаторов и ничего им не передаёт.</p>
+<h2>Доступ к страницам</h2>
+<p>Расширение не читает содержимое веб-страниц и не внедряет в них скрипты. Разрешение <code>tabs</code> используется только для чтения адреса и заголовка вкладки при сохранении, а также для закрытия, выгрузки и открытия вкладок.</p>
+<h2>Удаление данных</h2>
+<ul><li>Удалите группы на странице сейфа или замените сейф пустым импортом.</li><li>Удаление расширения стирает IndexedDB и <code>chrome.storage</code> расширения. Файлы бэкапа в <code>Загрузки/TabVault/</code> остаются — удалите папку вручную, если они не нужны.</li></ul>
+<h2>Контакты</h2>
+<p>Вопросы — через Issues репозитория проекта.</p>
+<hr>
+<h2>English summary</h2>
+<p>Tab Vault stores saved tab URLs/titles, group names, an operation log, backup snapshots and settings <strong>only on your device</strong> (IndexedDB, <code>chrome.storage.local</code>, and optional backup files in <code>Downloads/TabVault/</code>). Nothing is sent anywhere: no server, analytics, ads, accounts or remote code. Favicons come from the browser's local cache. After installation the extension opens a static welcome page on the author's site once, and after removal the browser opens a static &quot;why did you uninstall?&quot; page; no data or identifiers are attached to them. Uninstalling removes the extension's storage; backup files in Downloads remain until you delete them.</p>
+</div>
+
+<p class="doc-links"><a href="/#tab-vault"><span class="en">Back to the extension</span><span class="ru">К расширению</span></a> · <a href="/privacy/index.html"><span class="en">All policies</span><span class="ru">Все политики</span></a></p>
+</div>
+</main>
+<footer class="foot">
+<div class="wrap foot-in">
+<div class="foot-brand">
+<a class="brand" href="/"><svg class="logo-mark" viewBox="0 0 32 32" width="28" height="28" aria-hidden="true"><rect x="1.5" y="1.5" width="29" height="29" rx="6" fill="none" stroke="currentColor" stroke-width="2"/><path d="M9 17.5l4.6 4.6L23.5 10" fill="none" stroke="var(--accent)" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="brand-name">ddvdvt<span class="brand-sub">/ <span class="en">extensions</span><span class="ru">расширения</span></span></span></a>
+<p class="muted"><span class="en">No cookies, no analytics, no external requests from this site.</span><span class="ru">На этом сайте нет cookies, аналитики и внешних запросов.</span></p>
+</div>
+<div class="foot-links">
+<h2 class="foot-h"><span class="en">Site</span><span class="ru">Сайт</span></h2>
+<ul class="foot-list">
+<li><a href="/#extensions"><span class="en">All extensions</span><span class="ru">Все расширения</span></a></li>
+<li><a href="/privacy/index.html"><span class="en">Privacy policies</span><span class="ru">Политики конфиденциальности</span></a></li>
+<li><a href="https://github.com/ddvdvt" rel="noopener">GitHub</a></li>
+</ul>
+</div>
+<div class="foot-projects"><h2 class="foot-h"><span class="en">Other projects by the author</span><span class="ru">Другие проекты автора</span></h2>
+<ul class="foot-list"><li><a href="https://formulacamp.com" rel="noopener">FormulaCamp</a> <span class="muted">— <span class="en">Learn Excel online with graded formulas — an Excel trainer.</span><span class="ru">Учите Excel онлайн на задачах с формулами по нарастающей сложности — тренажёр Excel.</span></span></li><li><a href="https://replaylab.pro" rel="noopener">CS2 Replay</a> <span class="muted">— <span class="en">Counter-Strike 2 demo analysis.</span><span class="ru">Разбор демо-записей Counter-Strike 2.</span></span></li></ul></div>
+</div>
+</footer>
+<script src="/assets/stores.js"></script>
+<script src="/assets/site.js"></script>
+</body>
+</html>

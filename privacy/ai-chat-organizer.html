@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en" data-title-ru="Политика конфиденциальности — Органайзер ИИ-чатов | ddvdvt" data-desc-ru="Политика конфиденциальности «Органайзер ИИ-чатов — папки, поиск, экспорт»: что хранится, где и что никогда не отправляется.">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'; base-uri 'self'; form-action 'none'; object-src 'none'">
+<meta name="referrer" content="no-referrer">
+<title>Privacy policy — AI Chat Organizer | ddvdvt extensions</title>
+<meta name="description" content="Privacy policy of AI Chat Organizer — folders, search, export: what is stored, where, and what is never sent.">
+<link rel="canonical" href="https://ddvdvt.github.io/privacy/ai-chat-organizer.html">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<meta name="color-scheme" content="light dark">
+<meta property="og:site_name" content="ddvdvt extensions">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Privacy policy — AI Chat Organizer | ddvdvt extensions">
+<meta property="og:description" content="Privacy policy of AI Chat Organizer — folders, search, export: what is stored, where, and what is never sent.">
+<meta property="og:url" content="https://ddvdvt.github.io/privacy/ai-chat-organizer.html">
+<meta property="og:image" content="https://ddvdvt.github.io/img/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="/assets/site.css">
+<script src="/assets/boot.js"></script>
+</head>
+<body>
+<a class="skip" href="#main"><span class="en">Skip to content</span><span class="ru">К содержимому</span></a><header class="top">
+<div class="wrap top-in">
+<a class="brand" href="/" aria-label="ddvdvt extensions"><svg class="logo-mark" viewBox="0 0 32 32" width="28" height="28" aria-hidden="true"><rect x="1.5" y="1.5" width="29" height="29" rx="6" fill="none" stroke="currentColor" stroke-width="2"/><path d="M9 17.5l4.6 4.6L23.5 10" fill="none" stroke="var(--accent)" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="brand-name">ddvdvt<span class="brand-sub">/ <span class="en">extensions</span><span class="ru">расширения</span></span></span></a>
+<nav class="nav" aria-label="Main">
+<a href="/#extensions"><span class="en">Extensions</span><span class="ru">Расширения</span></a>
+<a href="/privacy/index.html" aria-current="page"><span class="en">Privacy</span><span class="ru">Приватность</span></a>
+<a href="/#projects"><span class="en">Projects</span><span class="ru">Проекты</span></a>
+</nav>
+<div class="lang" role="group" aria-label="Language / Язык">
+<button type="button" class="lang-btn" data-set-lang="en" aria-pressed="true">EN</button>
+<button type="button" class="lang-btn" data-set-lang="ru" aria-pressed="false">RU</button>
+</div>
+</div>
+</header>
+<main id="main" class="x-ai-chat-organizer">
+<div class="wrap doc-wrap">
+<nav class="crumbs" aria-label="Breadcrumb"><a href="/privacy/index.html"><span class="en">Privacy policies</span><span class="ru">Политики конфиденциальности</span></a><span aria-hidden="true"> / </span><a href="/#ai-chat-organizer"><span class="en">AI Chat Organizer</span><span class="ru">Органайзер ИИ-чатов</span></a></nav>
+<div class="doc-title"><img class="ico" src="/img/icons/ai-chat-organizer.png" width="128" height="128" alt="" decoding="async"><p class="eyebrow"><span class="en">Privacy policy</span><span class="ru">Политика конфиденциальности</span></p></div>
+<div class="en doc">
+<p class="lang-note">English translation. The Russian text is the original and is authoritative.</p>
+<h1>Privacy Policy — AI Chat Organizer</h1>
+<p class="meta"><em>Date: 26.10.2026</em></p>
+<h2>What data is processed</h2>
+<ul><li><strong>Your chat organization:</strong> folders, tags, pins, your own chat names and, for each chat, the service, the identifier from the address, the title and the page address.</li><li><strong>The text of open chats</strong> (if &quot;Remember open chats for search&quot; is turned on for that site). When you open a chat on an enabled site, the extension reads the visible message text and the chat title from the page and saves them for search and export. The extension does <strong>not</strong> call the services' APIs, does <strong>not</strong> download history in the background and does not open chats by itself: only what you opened yourself and what is rendered on the screen is saved.</li><li><strong>Prompts</strong> from your library and <strong>settings</strong> (which sites are enabled, what to remember).</li><li><strong>A service marker about a site's markup</strong> (&quot;markup OK / site changed&quot; and the time of the check) — without any chat content.</li></ul>
+<h2>Where the data is stored</h2>
+<p>Only locally in your browser: <code>chrome.storage.local</code> (folders, tags, prompts, settings), the extension's IndexedDB (texts of open chats) and <code>chrome.storage.session</code> (temporary transfer of a chat to the print page, cleared when the browser is closed). The data is not synchronised and is not transmitted to us or to third parties.</p>
+<h2>What the extension does not do</h2>
+<ul><li>It sends no network requests at all: no servers, analytics, advertising, telemetry or accounts.</li><li>It gets no access to sites without your permission. At installation there is no access to any site; access to chatgpt.com, claude.ai and gemini.google.com is requested separately when you enable a site, and can be revoked at any time.</li><li>It does not expose your data to site scripts: the on-page panel is in a closed Shadow DOM, and on one service's page only that service's chats are visible.</li><li>It does not load or execute remote code.</li></ul>
+<h2>The author's site pages</h2>
+<p>After installation the extension opens a tab with a short guide on the author's site once, and after removal the browser opens a &quot;why did you uninstall?&quot; page. These are ordinary static pages: the extension adds no data or identifiers to their addresses and transmits nothing to them.</p>
+<h2>Export and deletion</h2>
+<ul><li>Markdown, HTML, JSON, TXT, .zip files and the .json backup are created right in the browser and saved wherever you choose. The PDF is produced by the browser itself through the print dialog.</li><li>You can turn off saving of texts for any site and delete already saved texts in the organizer → &quot;Settings&quot;. The same place has &quot;Forget the history of open chats&quot; and &quot;Delete all data&quot;.</li><li>When the extension is removed, the browser deletes all of its data.</li></ul>
+<h2>Contact</h2>
+<p>Questions can be asked through the issues of the project's repository on GitHub.</p>
+</div>
+<div class="ru doc">
+<p class="lang-note">Оригинал политики. Английский перевод доступен по кнопке EN.</p>
+<h1>Политика конфиденциальности «Органайзер ИИ-чатов»</h1>
+<p class="meta"><em>Дата: 26.10.2026</em></p>
+<h2>Какие данные обрабатываются</h2>
+<ul><li><strong>Ваша организация чатов:</strong> папки, теги, закрепления, ваши названия чатов, а также для каждого чата — сервис, идентификатор из адреса, название и адрес страницы.</li><li><strong>Текст открытых чатов</strong> (если включено «Запоминать открытые чаты для поиска» для этого сайта). Когда вы открываете чат на включённом сайте, расширение читает со страницы видимый текст сообщений и название чата и сохраняет их для поиска и экспорта. Расширение <strong>не</strong> обращается к API сервисов, <strong>не</strong> скачивает историю в фоне и не открывает чаты само: сохраняется только то, что вы сами открыли и что отрисовано на экране.</li><li><strong>Промпты</strong> из вашей библиотеки и <strong>настройки</strong> (какие сайты включены, что запоминать).</li><li><strong>Служебная отметка о разметке сайта</strong> («разметка в порядке / сайт изменился» и время проверки) — без содержимого чатов.</li></ul>
+<h2>Где хранятся данные</h2>
+<p>Только локально в вашем браузере: <code>chrome.storage.local</code> (папки, теги, промпты, настройки), IndexedDB расширения (тексты открытых чатов) и <code>chrome.storage.session</code> (временная передача чата странице печати, очищается при закрытии браузера). Данные не синхронизируются и не передаются ни нам, ни третьим лицам.</p>
+<h2>Что расширение не делает</h2>
+<ul><li>Не отправляет никаких сетевых запросов: нет серверов, аналитики, рекламы, телеметрии и учётных записей.</li><li>Не получает доступ к сайтам без вашего разрешения. При установке доступа нет ни к одному сайту; доступ к chatgpt.com, claude.ai и gemini.google.com запрашивается отдельно, когда вы включаете сайт, и отзывается в любой момент.</li><li>Не показывает ваши данные скриптам сайтов: панель на странице находится в закрытом Shadow DOM, и на странице одного сервиса видны только чаты этого сервиса.</li><li>Не загружает и не выполняет удалённый код.</li></ul>
+<h2>Страницы сайта автора</h2>
+<p>После установки расширение один раз открывает вкладку с короткой инструкцией на сайте автора, а после удаления браузер открывает страницу с вопросом «почему удалили?». Это обычные статические страницы: расширение не добавляет к их адресам никаких данных или идентификаторов и ничего им не передаёт.</p>
+<h2>Экспорт и удаление</h2>
+<ul><li>Файлы Markdown, HTML, JSON, TXT, .zip и резервная копия .json создаются прямо в браузере и сохраняются туда, куда вы укажете. PDF создаёт сам браузер через окно печати.</li><li>Выключить сохранение текстов для любого сайта и удалить уже сохранённые тексты можно в органайзере → «Настройки». Там же: «Забыть историю открытых чатов» и «Удалить все данные».</li><li>При удалении расширения браузер удаляет все его данные.</li></ul>
+<h2>Контакты</h2>
+<p>Вопросы можно задать через issues репозитория проекта на GitHub.</p>
+</div>
+<p class="fine"><span class="en">Free and open source (MIT). Not affiliated with the makers of these services.</span><span class="ru">Бесплатно и с открытым исходным кодом (MIT). Расширение не связано с разработчиками этих сервисов.</span></p>
+<p class="doc-links"><a href="/#ai-chat-organizer"><span class="en">Back to the extension</span><span class="ru">К расширению</span></a> · <a href="/privacy/index.html"><span class="en">All policies</span><span class="ru">Все политики</span></a></p>
+</div>
+</main>
+<footer class="foot">
+<div class="wrap foot-in">
+<div class="foot-brand">
+<a class="brand" href="/"><svg class="logo-mark" viewBox="0 0 32 32" width="28" height="28" aria-hidden="true"><rect x="1.5" y="1.5" width="29" height="29" rx="6" fill="none" stroke="currentColor" stroke-width="2"/><path d="M9 17.5l4.6 4.6L23.5 10" fill="none" stroke="var(--accent)" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="brand-name">ddvdvt<span class="brand-sub">/ <span class="en">extensions</span><span class="ru">расширения</span></span></span></a>
+<p class="muted"><span class="en">No cookies, no analytics, no external requests from this site.</span><span class="ru">На этом сайте нет cookies, аналитики и внешних запросов.</span></p>
+</div>
+<div class="foot-links">
+<h2 class="foot-h"><span class="en">Site</span><span class="ru">Сайт</span></h2>
+<ul class="foot-list">
+<li><a href="/#extensions"><span class="en">All extensions</span><span class="ru">Все расширения</span></a></li>
+<li><a href="/privacy/index.html"><span class="en">Privacy policies</span><span class="ru">Политики конфиденциальности</span></a></li>
+<li><a href="https://github.com/ddvdvt" rel="noopener">GitHub</a></li>
+</ul>
+</div>
+<div class="foot-projects"><h2 class="foot-h"><span class="en">Other projects by the author</span><span class="ru">Другие проекты автора</span></h2>
+<ul class="foot-list"><li><a href="https://formulacamp.com" rel="noopener">FormulaCamp</a> <span class="muted">— <span class="en">Learn Excel online with graded formulas — an Excel trainer.</span><span class="ru">Учите Excel онлайн на задачах с формулами по нарастающей сложности — тренажёр Excel.</span></span></li><li><a href="https://replaylab.pro" rel="noopener">CS2 Replay</a> <span class="muted">— <span class="en">Counter-Strike 2 demo analysis.</span><span class="ru">Разбор демо-записей Counter-Strike 2.</span></span></li></ul></div>
+</div>
+</footer>
+<script src="/assets/stores.js"></script>
+<script src="/assets/site.js"></script>
+</body>
+</html>

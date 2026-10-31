@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en" data-title-ru="Политика конфиденциальности — Смотреть позже — чистка и очередь | ddvdvt" data-desc-ru="Политика конфиденциальности «Смотреть позже — чистка и очередь»: что хранится, где и что никогда не отправляется.">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'; base-uri 'self'; form-action 'none'; object-src 'none'">
+<meta name="referrer" content="no-referrer">
+<title>Privacy policy — Watch Later Cleaner &amp; Play Next Queue | ddvdvt extensions</title>
+<meta name="description" content="Privacy policy of Watch Later Cleaner &amp; Play Next Queue: what is stored, where, and what is never sent.">
+<link rel="canonical" href="https://ddvdvt.github.io/privacy/youtube-watch-later.html">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<meta name="color-scheme" content="light dark">
+<meta property="og:site_name" content="ddvdvt extensions">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Privacy policy — Watch Later Cleaner &amp; Play Next Queue | ddvdvt extensions">
+<meta property="og:description" content="Privacy policy of Watch Later Cleaner &amp; Play Next Queue: what is stored, where, and what is never sent.">
+<meta property="og:url" content="https://ddvdvt.github.io/privacy/youtube-watch-later.html">
+<meta property="og:image" content="https://ddvdvt.github.io/img/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="/assets/site.css">
+<script src="/assets/boot.js"></script>
+</head>
+<body>
+<a class="skip" href="#main"><span class="en">Skip to content</span><span class="ru">К содержимому</span></a><header class="top">
+<div class="wrap top-in">
+<a class="brand" href="/" aria-label="ddvdvt extensions"><svg class="logo-mark" viewBox="0 0 32 32" width="28" height="28" aria-hidden="true"><rect x="1.5" y="1.5" width="29" height="29" rx="6" fill="none" stroke="currentColor" stroke-width="2"/><path d="M9 17.5l4.6 4.6L23.5 10" fill="none" stroke="var(--accent)" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="brand-name">ddvdvt<span class="brand-sub">/ <span class="en">extensions</span><span class="ru">расширения</span></span></span></a>
+<nav class="nav" aria-label="Main">
+<a href="/#extensions"><span class="en">Extensions</span><span class="ru">Расширения</span></a>
+<a href="/privacy/index.html" aria-current="page"><span class="en">Privacy</span><span class="ru">Приватность</span></a>
+<a href="/#projects"><span class="en">Projects</span><span class="ru">Проекты</span></a>
+</nav>
+<div class="lang" role="group" aria-label="Language / Язык">
+<button type="button" class="lang-btn" data-set-lang="en" aria-pressed="true">EN</button>
+<button type="button" class="lang-btn" data-set-lang="ru" aria-pressed="false">RU</button>
+</div>
+</div>
+</header>
+<main id="main" class="x-youtube-watch-later">
+<div class="wrap doc-wrap">
+<nav class="crumbs" aria-label="Breadcrumb"><a href="/privacy/index.html"><span class="en">Privacy policies</span><span class="ru">Политики конфиденциальности</span></a><span aria-hidden="true"> / </span><a href="/#youtube-watch-later"><span class="en">Watch Later Cleaner &amp; Play Next Queue</span><span class="ru">Смотреть позже — чистка и очередь</span></a></nav>
+<div class="doc-title"><img class="ico" src="/img/icons/youtube-watch-later.png" width="128" height="128" alt="" decoding="async"><p class="eyebrow"><span class="en">Privacy policy</span><span class="ru">Политика конфиденциальности</span></p></div>
+<div class="en doc">
+<p class="lang-note">English translation. The Russian text is the original and is authoritative.</p>
+<h1>Privacy Policy — Watch Later Cleaner &amp; Play Next Queue</h1>
+<p class="meta"><em>Date: 26.10.2026</em></p>
+<h2>What data is processed</h2>
+<ul><li><strong>The &quot;Watch later&quot; list.</strong> When you press &quot;Load the whole list&quot;, the extension fetches your list (video id, title, channel, duration, percent watched, position) with the same requests that the <code>www.youtube.com/playlist?list=WL</code> page itself makes. The list is processed in your tab and is not saved, except for the backups (below).</li><li><strong>Backups.</strong> Before every removal, a JSON file with the whole loaded list is downloaded — it stays on your computer, in the downloads folder. The three most recent copies are also kept inside the extension so that you can restore videos even if the file gets lost. They can be downloaded or deleted in the settings.</li><li><strong>Unfinished removal:</strong> which videos are selected (id, title) and how many have already been processed — so that it can continue after the page is reloaded. It can be deleted with the &quot;Forget the unfinished removal&quot; button.</li><li><strong>The &quot;Play next&quot; queue:</strong> video id, title, channel, duration.</li><li><strong>Settings:</strong> thumbnail buttons, auto-advance, the queue panel, the &quot;watched&quot; threshold, the removal speed.</li></ul>
+<h2>Where the data is stored</h2>
+<p>Only locally: in your browser's <code>chrome.storage.local</code> and in the files you download. Nothing is synchronised and nothing is transmitted to the author or to third parties.</p>
+<h2>Network requests</h2>
+<p>The extension contacts <strong>only <code>www.youtube.com</code></strong>, and only in the way the &quot;Watch later&quot; page itself does in your tab:</p>
+<ul><li>loading the list: <code>POST /youtubei/v1/browse</code> (the &quot;Watch later&quot; playlist only);</li><li>removing and restoring videos: <code>POST /youtubei/v1/browse/edit_playlist</code> (the &quot;Watch later&quot; playlist only, only removing and adding videos).</li></ul>
+<p>So that YouTube accepts these requests as requests from your page, the extension computes, in the page context, the same authorization header that YouTube itself computes (a hash of the <code>SAPISID</code> cookie value, the time and the site address). The cookie value is read only for this purpose, in this tab, is not stored, and does not go anywhere other than this request to <code>www.youtube.com</code>. The extension does not use the browser's cookies API.</p>
+<p>Requests are sent only on your command (load the list, remove, restore). On other YouTube pages the extension makes no requests: the queue buttons and auto-advance work locally.</p>
+<p>After installation the extension opens a tab with a short guide on the author's site once, and after removal the browser opens a &quot;why did you uninstall?&quot; page. These are ordinary static pages: the extension adds no data or identifiers to their addresses and transmits nothing to them.</p>
+<h2>What the extension does not do</h2>
+<ul><li>No analytics, telemetry, advertising or accounts.</li><li>No access to any sites other than <code>www.youtube.com</code>; your watch history, subscriptions and other playlists are not read.</li><li>No remote code is executed.</li></ul>
+<h2>Deleting data</h2>
+<p>In the settings: &quot;Delete copies&quot;, &quot;Forget the unfinished removal&quot;, &quot;Clear&quot; the queue, &quot;Reset settings&quot;. When the extension is removed, the browser deletes all of its data; the backup files you have downloaded stay with you.</p>
+<h2>Contact</h2>
+<p>Questions can be asked through the issues of the project's repository on GitHub.</p>
+</div>
+<div class="ru doc">
+<p class="lang-note">Оригинал политики. Английский перевод доступен по кнопке EN.</p>
+<h1>Политика конфиденциальности «Смотреть позже — чистка и очередь»</h1>
+<p class="meta"><em>Дата: 26.10.2026</em></p>
+<h2>Какие данные обрабатываются</h2>
+<ul><li><strong>Список «Смотреть позже».</strong> Когда вы нажимаете «Загрузить весь список», расширение получает ваш список (id видео, название, канал, длительность, процент просмотра, позиция) теми же запросами, что и сама страница <code>www.youtube.com/playlist?list=WL</code>. Список обрабатывается в вашей вкладке и не сохраняется, кроме резервных копий (ниже).</li><li><strong>Резервные копии.</strong> Перед каждым удалением скачивается файл JSON со всем загруженным списком — он остаётся у вас на компьютере, в папке загрузок. Три последние копии хранятся ещё и в расширении, чтобы можно было вернуть видео, даже если файл потерялся. Их можно скачать или удалить в настройках.</li><li><strong>Незавершённое удаление:</strong> какие видео выбраны (id, название) и сколько уже обработано — чтобы продолжить после перезагрузки страницы. Можно удалить кнопкой «Забыть незавершённое удаление».</li><li><strong>Очередь «Воспроизвести далее»:</strong> id видео, название, канал, длительность.</li><li><strong>Настройки:</strong> кнопки на превью, автопереход, панель очереди, порог «просмотрено», скорость удаления.</li></ul>
+<h2>Где хранятся данные</h2>
+<p>Только локально: в <code>chrome.storage.local</code> вашего браузера и в скачанных вами файлах. Ничего не синхронизируется и не передаётся ни автору, ни третьим лицам.</p>
+<h2>Сетевые запросы</h2>
+<p>Расширение обращается <strong>только к <code>www.youtube.com</code></strong> и только так, как это делает сама страница «Смотреть позже» в вашей вкладке:</p>
+<ul><li>загрузка списка: <code>POST /youtubei/v1/browse</code> (только плейлист «Смотреть позже»);</li><li>удаление и возврат видео: <code>POST /youtubei/v1/browse/edit_playlist</code> (только плейлист «Смотреть позже», только удаление и добавление видео).</li></ul>
+<p>Чтобы YouTube принял эти запросы как запросы вашей страницы, расширение в контексте страницы вычисляет тот же заголовок авторизации, что и сам YouTube (хеш от значения cookie <code>SAPISID</code>, времени и адреса сайта). Значение cookie читается только для этого, в этой вкладке, не сохраняется и никуда, кроме этого запроса к <code>www.youtube.com</code>, не попадает. API cookies браузера расширение не использует.</p>
+<p>Запросы отправляются только по вашей команде (загрузить список, удалить, вернуть). На других страницах YouTube расширение запросов не делает: кнопки очереди и автопереход работают локально.</p>
+<p>После установки расширение один раз открывает вкладку с короткой инструкцией на сайте автора, а после удаления браузер открывает страницу с вопросом «почему удалили?». Это обычные статические страницы: расширение не добавляет к их адресам никаких данных или идентификаторов и ничего им не передаёт.</p>
+<h2>Чего расширение не делает</h2>
+<ul><li>Нет аналитики, телеметрии, рекламы и учётных записей.</li><li>Нет доступа к сайтам, кроме <code>www.youtube.com</code>; история просмотров, подписки и другие плейлисты не читаются.</li><li>Не выполняется удалённый код.</li></ul>
+<h2>Удаление данных</h2>
+<p>В настройках: «Удалить копии», «Забыть незавершённое удаление», «Очистить» очередь, «Сбросить настройки». При удалении расширения браузер удаляет все его данные; скачанные файлы резервных копий остаются у вас.</p>
+<h2>Контакты</h2>
+<p>Вопросы можно задать через issues репозитория проекта на GitHub.</p>
+</div>
+<p class="fine"><span class="en">This extension is not affiliated with or endorsed by YouTube or Google.</span><span class="ru">Расширение не связано с YouTube или Google и не одобрено ими.</span></p>
+<p class="doc-links"><a href="/#youtube-watch-later"><span class="en">Back to the extension</span><span class="ru">К расширению</span></a> · <a href="/privacy/index.html"><span class="en">All policies</span><span class="ru">Все политики</span></a></p>
+</div>
+</main>
+<footer class="foot">
+<div class="wrap foot-in">
+<div class="foot-brand">
+<a class="brand" href="/"><svg class="logo-mark" viewBox="0 0 32 32" width="28" height="28" aria-hidden="true"><rect x="1.5" y="1.5" width="29" height="29" rx="6" fill="none" stroke="currentColor" stroke-width="2"/><path d="M9 17.5l4.6 4.6L23.5 10" fill="none" stroke="var(--accent)" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="brand-name">ddvdvt<span class="brand-sub">/ <span class="en">extensions</span><span class="ru">расширения</span></span></span></a>
+<p class="muted"><span class="en">No cookies, no analytics, no external requests from this site.</span><span class="ru">На этом сайте нет cookies, аналитики и внешних запросов.</span></p>
+</div>
+<div class="foot-links">
+<h2 class="foot-h"><span class="en">Site</span><span class="ru">Сайт</span></h2>
+<ul class="foot-list">
+<li><a href="/#extensions"><span class="en">All extensions</span><span class="ru">Все расширения</span></a></li>
+<li><a href="/privacy/index.html"><span class="en">Privacy policies</span><span class="ru">Политики конфиденциальности</span></a></li>
+<li><a href="https://github.com/ddvdvt" rel="noopener">GitHub</a></li>
+</ul>
+</div>
+<div class="foot-projects"><h2 class="foot-h"><span class="en">Other projects by the author</span><span class="ru">Другие проекты автора</span></h2>
+<ul class="foot-list"><li><a href="https://formulacamp.com" rel="noopener">FormulaCamp</a> <span class="muted">— <span class="en">Learn Excel online with graded formulas — an Excel trainer.</span><span class="ru">Учите Excel онлайн на задачах с формулами по нарастающей сложности — тренажёр Excel.</span></span></li><li><a href="https://replaylab.pro" rel="noopener">CS2 Replay</a> <span class="muted">— <span class="en">Counter-Strike 2 demo analysis.</span><span class="ru">Разбор демо-записей Counter-Strike 2.</span></span></li></ul></div>
+</div>
+</footer>
+<script src="/assets/stores.js"></script>
+<script src="/assets/site.js"></script>
+</body>
+</html>

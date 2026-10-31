@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en" data-title-ru="Политика конфиденциальности — Честная цена | ddvdvt" data-desc-ru="Политика конфиденциальности «Честная цена — история цен WB, Ozon и Kaspi»: что хранится, где и что никогда не отправляется.">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'; base-uri 'self'; form-action 'none'; object-src 'none'">
+<meta name="referrer" content="no-referrer">
+<title>Privacy policy — Honest Price | ddvdvt extensions</title>
+<meta name="description" content="Privacy policy of Honest Price — price history for WB, Ozon, Kaspi: what is stored, where, and what is never sent.">
+<link rel="canonical" href="https://ddvdvt.github.io/privacy/marketplace-buyer.html">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<meta name="color-scheme" content="light dark">
+<meta property="og:site_name" content="ddvdvt extensions">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Privacy policy — Honest Price | ddvdvt extensions">
+<meta property="og:description" content="Privacy policy of Honest Price — price history for WB, Ozon, Kaspi: what is stored, where, and what is never sent.">
+<meta property="og:url" content="https://ddvdvt.github.io/privacy/marketplace-buyer.html">
+<meta property="og:image" content="https://ddvdvt.github.io/img/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="/assets/site.css">
+<script src="/assets/boot.js"></script>
+</head>
+<body>
+<a class="skip" href="#main"><span class="en">Skip to content</span><span class="ru">К содержимому</span></a><header class="top">
+<div class="wrap top-in">
+<a class="brand" href="/" aria-label="ddvdvt extensions"><svg class="logo-mark" viewBox="0 0 32 32" width="28" height="28" aria-hidden="true"><rect x="1.5" y="1.5" width="29" height="29" rx="6" fill="none" stroke="currentColor" stroke-width="2"/><path d="M9 17.5l4.6 4.6L23.5 10" fill="none" stroke="var(--accent)" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="brand-name">ddvdvt<span class="brand-sub">/ <span class="en">extensions</span><span class="ru">расширения</span></span></span></a>
+<nav class="nav" aria-label="Main">
+<a href="/#extensions"><span class="en">Extensions</span><span class="ru">Расширения</span></a>
+<a href="/privacy/index.html" aria-current="page"><span class="en">Privacy</span><span class="ru">Приватность</span></a>
+<a href="/#projects"><span class="en">Projects</span><span class="ru">Проекты</span></a>
+</nav>
+<div class="lang" role="group" aria-label="Language / Язык">
+<button type="button" class="lang-btn" data-set-lang="en" aria-pressed="true">EN</button>
+<button type="button" class="lang-btn" data-set-lang="ru" aria-pressed="false">RU</button>
+</div>
+</div>
+</header>
+<main id="main" class="x-marketplace-buyer">
+<div class="wrap doc-wrap">
+<nav class="crumbs" aria-label="Breadcrumb"><a href="/privacy/index.html"><span class="en">Privacy policies</span><span class="ru">Политики конфиденциальности</span></a><span aria-hidden="true"> / </span><a href="/#marketplace-buyer"><span class="en">Honest Price</span><span class="ru">Честная цена</span></a></nav>
+<div class="doc-title"><img class="ico" src="/img/icons/marketplace-buyer.png" width="128" height="128" alt="" decoding="async"><p class="eyebrow"><span class="en">Privacy policy</span><span class="ru">Политика конфиденциальности</span></p></div>
+<div class="en doc">
+<p class="lang-note">English translation. The Russian text is the original and is authoritative.</p>
+<h1>Privacy Policy — Honest Price</h1>
+<p class="meta"><em>In effect since version 1.0.0.</em></p>
+<p><strong>In short:</strong> all data is stored only in your browser on this device. The extension sends no data to the author or to third parties. There is no analytics, advertising or accounts.</p>
+<h2>What is stored on the device</h2>
+<div class="table-wrap"><table><thead><tr><th>Data</th><th>Where</th><th>Why</th></tr></thead><tbody><tr><td>Prices of the products you opened on Wildberries, Ozon and Kaspi: marketplace, item number, time, price, card or wallet price, crossed-out price</td><td>The extension's IndexedDB</td><td>Price history, the chart and the &quot;discount&quot; verdict</td></tr><tr><td>Watch list: item number, name, product link, targets and latest prices</td><td><code>chrome.storage.local</code></td><td>Background price checks and notifications</td></tr><tr><td>Settings</td><td><code>chrome.storage.local</code></td><td>—</td></tr></tbody></table></div>
+<p>Browsing history, addresses of other sites, reviews, marketplace account data and cookies are <strong>not stored</strong>. Reviews on the page are analysed in memory and are not written anywhere.</p>
+<p>The history retention period is configurable: 30 days, 90 days, 180 days, 1 year (default), 2 years or unlimited. Old records are deleted automatically. Everything can be exported (JSON or CSV), imported and deleted in the settings. When the extension is removed, the browser deletes all of its data.</p>
+<h2>What network requests the extension makes</h2>
+<p>Only to the marketplaces themselves, <strong>without cookies</strong> (<code>credentials: &quot;omit&quot;</code>):</p>
+<ol><li><strong>On a Wildberries product page</strong> — a request to the public product card (<code>card.wb.ru</code>) and to reviews (<code>feedback-view-01.wb.ru</code> / <code>feedback-view-02.wb.ru</code>, fallbacks <code>feedbacks1.wb.ru</code> / <code>feedbacks2.wb.ru</code>). This is the same data the page itself loads.</li><li><strong>Background check of watched products</strong> — only for products you added to the watch list. The check runs roughly every 6 hours (the interval is configurable, but not more often than every 3 hours), at most 20 products at a time, one request at a time with pauses of 4–10 seconds:<ul><li>Wildberries: <code>card.wb.ru</code> (after an HTTP 403 refusal — no more than once a day, and less often);</li><li>Ozon: the JSON data of the product page on <code>www.ozon.ru</code> or <code>ozon.kz</code> (wherever you added the product);</li><li>Kaspi: the product page on <code>kaspi.kz</code>.</li></ul></li><li><strong>Only if you yourself turned it on</strong> — the update of recognition rules, with an address you specified: once a day a JSON file with selectors is downloaded from that address. The file contains data only, no code is executed. Request addresses in it can point only to marketplace hosts.</li></ol>
+<p>The extension contacts nothing else.</p>
+<h2>Pages on the author's site</h2>
+<p>After the first installation the extension opens a welcome page on the author's site once, and after removal Chrome opens a &quot;Why did you uninstall?&quot; page. These are static pages without cookies, analytics or forms. The extension adds no data to their address other than the extension's own name.</p>
+<h2>Permissions</h2>
+<ul><li><code>storage</code> — settings and the watch list.</li><li><code>alarms</code> — the infrequent background check of prices from the watch list.</li><li><code>notifications</code> — a notification about a price drop.</li><li>Access to <code>www.wildberries.ru</code>, <code>www.ozon.ru</code>, <code>ozon.kz</code>, <code>www.ozon.kz</code>, <code>kaspi.kz</code> — to show the panel on product pages and, if you turn that option on, to hide ad cards.</li><li>Access to <code>card.wb.ru</code>, <code>feedback-view-01.wb.ru</code>, <code>feedback-view-02.wb.ru</code>, <code>feedbacks1.wb.ru</code>, <code>feedbacks2.wb.ru</code> — Wildberries prices and reviews (the site loads them separately from the page).</li><li>Optional access to a single HTTPS address — requested only when you turn on the rules update.</li></ul>
+<h2>The future</h2>
+<p>In the future there may be a <strong>voluntary</strong> anonymous exchange of prices (only marketplace, item number, price and time rounded to the hour). It will be off by default and will start working only after your explicit consent on a separate screen. Before that, this policy will be updated. The project is described in docs/DATASET.md. In version 1.x this feature does not exist.</p>
+<h2>Contact</h2>
+<p>Questions can be asked through the issues of the project's repository on GitHub.</p>
+</div>
+<div class="ru doc">
+<p class="lang-note">Оригинал политики. Английский перевод доступен по кнопке EN.</p>
+<h1>Политика конфиденциальности «Честной цены»</h1>
+<p class="meta"><em>Действует с версии 1.0.0.</em></p>
+<p><strong>Коротко:</strong> все данные хранятся только в вашем браузере на этом устройстве. Расширение не отправляет никаких данных ни автору, ни третьим лицам. Аналитики, рекламы и аккаунтов нет.</p>
+<h2>Что хранится на устройстве</h2>
+<div class="table-wrap"><table><thead><tr><th>Данные</th><th>Где</th><th>Зачем</th></tr></thead><tbody><tr><td>Цены товаров, которые вы открывали на Wildberries, Ozon и Kaspi: маркетплейс, артикул, время, цена, цена по карте или с кошельком, зачёркнутая цена</td><td>IndexedDB расширения</td><td>История цен, график и вердикт «скидки»</td></tr><tr><td>Список наблюдения: артикул, название, ссылка на товар, цели и последние цены</td><td><code>chrome.storage.local</code></td><td>Фоновая проверка цены и уведомления</td></tr><tr><td>Настройки</td><td><code>chrome.storage.local</code></td><td>—</td></tr></tbody></table></div>
+<p>История браузера, адреса других сайтов, отзывы, данные аккаунта на маркетплейсе и cookies <strong>не сохраняются</strong>. Отзывы на странице анализируются в памяти и никуда не записываются.</p>
+<p>Срок хранения истории настраивается: 30 дней, 90 дней, 180 дней, 1 год (по умолчанию), 2 года или без ограничения. Старые записи удаляются автоматически. Всё можно экспортировать (JSON или CSV), импортировать и удалить в настройках. При удалении расширения браузер удаляет все его данные.</p>
+<h2>Какие сетевые запросы делает расширение</h2>
+<p>Только к самим маркетплейсам, <strong>без cookies</strong> (<code>credentials: &quot;omit&quot;</code>):</p>
+<ol><li><strong>На странице товара Wildberries</strong> — запрос к публичной карточке товара (<code>card.wb.ru</code>) и к отзывам (<code>feedback-view-01.wb.ru</code> / <code>feedback-view-02.wb.ru</code>, запасные <code>feedbacks1.wb.ru</code> / <code>feedbacks2.wb.ru</code>). Это те же данные, которые загружает сама страница.</li><li><strong>Фоновая проверка отслеживаемых товаров</strong> — только для товаров, которые вы добавили в список наблюдения. Проверка идёт примерно раз в 6 часов (интервал настраивается, но не чаще раза в 3 часа), не больше 20 товаров за раз, по одному запросу с паузами 4–10 секунд:<ul><li>Wildberries: <code>card.wb.ru</code> (после отказа HTTP 403 — не чаще раза в сутки и реже);</li><li>Ozon: JSON-данные страницы товара на <code>www.ozon.ru</code> или <code>ozon.kz</code> (там, где вы добавили товар);</li><li>Kaspi: страница товара на <code>kaspi.kz</code>.</li></ul></li><li><strong>Только если вы сами включили</strong> обновление правил распознавания и указали адрес — раз в сутки скачивается JSON-файл с селекторами с этого адреса. В файле только данные, код не выполняется. Адреса запросов в нём могут указывать только на хосты маркетплейсов.</li></ol>
+<p>Больше расширение никуда не обращается.</p>
+<h2>Страницы на сайте автора</h2>
+<p>После первой установки расширение один раз открывает страницу приветствия на сайте автора, а после удаления Chrome открывает страницу «Почему удалили?». Это статические страницы без cookies, аналитики и форм. Расширение не добавляет к их адресу никаких данных, кроме названия самого расширения.</p>
+<h2>Разрешения</h2>
+<ul><li><code>storage</code> — настройки и список наблюдения.</li><li><code>alarms</code> — редкая фоновая проверка цен из списка наблюдения.</li><li><code>notifications</code> — уведомление о снижении цены.</li><li>Доступ к <code>www.wildberries.ru</code>, <code>www.ozon.ru</code>, <code>ozon.kz</code>, <code>www.ozon.kz</code>, <code>kaspi.kz</code> — показывать панель на страницах товаров и, если вы включите эту опцию, скрывать рекламные карточки.</li><li>Доступ к <code>card.wb.ru</code>, <code>feedback-view-01.wb.ru</code>, <code>feedback-view-02.wb.ru</code>, <code>feedbacks1.wb.ru</code>, <code>feedbacks2.wb.ru</code> — цена и отзывы Wildberries (сайт загружает их отдельно от страницы).</li><li>Необязательный доступ к одному HTTPS-адресу — запрашивается только при включении обновления правил.</li></ul>
+<h2>Будущее</h2>
+<p>В будущем, возможно, появится <strong>добровольный</strong> анонимный обмен ценами (только маркетплейс, артикул, цена и время, округлённое до часа). Он будет выключен по умолчанию и заработает только после вашего явного согласия на отдельном экране. До этого политика будет обновлена. Проект описан в docs/DATASET.md. В версии 1.x этой функции нет.</p>
+<h2>Контакты</h2>
+<p>Вопросы можно задать через issues репозитория проекта на GitHub.</p>
+</div>
+<p class="fine"><span class="en">Works on Wildberries, Ozon (ozon.ru and ozon.kz) and Kaspi.kz. The extension is independent and not affiliated with these marketplaces.</span><span class="ru">Работает на Wildberries, Ozon (ozon.ru и ozon.kz) и Kaspi.kz. Расширение независимое и не связано с этими площадками.</span></p>
+<p class="doc-links"><a href="/#marketplace-buyer"><span class="en">Back to the extension</span><span class="ru">К расширению</span></a> · <a href="/privacy/index.html"><span class="en">All policies</span><span class="ru">Все политики</span></a></p>
+</div>
+</main>
+<footer class="foot">
+<div class="wrap foot-in">
+<div class="foot-brand">
+<a class="brand" href="/"><svg class="logo-mark" viewBox="0 0 32 32" width="28" height="28" aria-hidden="true"><rect x="1.5" y="1.5" width="29" height="29" rx="6" fill="none" stroke="currentColor" stroke-width="2"/><path d="M9 17.5l4.6 4.6L23.5 10" fill="none" stroke="var(--accent)" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="brand-name">ddvdvt<span class="brand-sub">/ <span class="en">extensions</span><span class="ru">расширения</span></span></span></a>
+<p class="muted"><span class="en">No cookies, no analytics, no external requests from this site.</span><span class="ru">На этом сайте нет cookies, аналитики и внешних запросов.</span></p>
+</div>
+<div class="foot-links">
+<h2 class="foot-h"><span class="en">Site</span><span class="ru">Сайт</span></h2>
+<ul class="foot-list">
+<li><a href="/#extensions"><span class="en">All extensions</span><span class="ru">Все расширения</span></a></li>
+<li><a href="/privacy/index.html"><span class="en">Privacy policies</span><span class="ru">Политики конфиденциальности</span></a></li>
+<li><a href="https://github.com/ddvdvt" rel="noopener">GitHub</a></li>
+</ul>
+</div>
+<div class="foot-projects"><h2 class="foot-h"><span class="en">Other projects by the author</span><span class="ru">Другие проекты автора</span></h2>
+<ul class="foot-list"><li><a href="https://formulacamp.com" rel="noopener">FormulaCamp</a> <span class="muted">— <span class="en">Learn Excel online with graded formulas — an Excel trainer.</span><span class="ru">Учите Excel онлайн на задачах с формулами по нарастающей сложности — тренажёр Excel.</span></span></li><li><a href="https://replaylab.pro" rel="noopener">CS2 Replay</a> <span class="muted">— <span class="en">Counter-Strike 2 demo analysis.</span><span class="ru">Разбор демо-записей Counter-Strike 2.</span></span></li></ul></div>
+</div>
+</footer>
+<script src="/assets/stores.js"></script>
+<script src="/assets/site.js"></script>
+</body>
+</html>
